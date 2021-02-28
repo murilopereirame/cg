@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EAEAE0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+.actions button {
+    background-color: #1C4670;
+    border: 1px solid #1C4670;
+    border-radius: 10px;
+    padding: 1rem .5rem;
+    margin-right: 1rem;
+    width: 100px;
+    height: 50px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#paintRegion {
+    max-width: 50vw;    
+    height: 50vh;
+}
+
+#canvas {    
+    margin-top: 1rem;
+    border: 2px solid #1C4670;
+    background-color: white;    
+}

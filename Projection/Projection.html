@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Projeções</title>
+</head>
+
+<body onload="Init()">
+  <div class="content">   
+    <div class="inputHolder">
+      <h2>Translação</h2>
+      <div class="actions">        
+        <div class="channel">
+          <label for="X">Eixo X</label>
+          <input id="X" type="text" class="radio" name="X" value="1">
+        </div>
+        <div div class="channel">
+          <label for="Y">Eixo Y</label>
+          <input id="Y" type="text" class="radio" name="Y" value="1">
+        </div>
+        <div div class="channel">
+          <label for="Z">Eixo Z</label>
+          <input id="Z" type="text" class="radio" name="Z" value="1">
+        </div>
+        <button type="button" id="translate">Transformar</button>
+      </div>
+      <br/>
+      <h2>Escala</h2>
+      <div class="actions">
+        <div div class="channel">
+          <label for="SX">Eixo X</label>
+          <input id="SX" type="text" class="radio" name="SX" value="1">
+        </div>
+        <div div class="channel">
+          <label for="SY">Eixo Y</label>
+          <input id="SY" type="text" class="radio" name="SY" value="1">
+        </div>
+        <div div class="channel">
+          <label for="SZ">Eixo Z</label>
+          <input id="SZ" type="text" class="radio" name="SZ" value="1">
+        </div>
+        <button type="button" id="scale">Transformar</button>
+      </div>
+      <br/>
+      <h2>Rotação</h2>
+      <div class="actions">
+        <div div class="channel">
+          <label for="RAD">Radianos</label>
+          <input id="RAD" type="text" class="radio" name="RAD" value="0">
+        </div> 
+        <div div class="channel">
+          <label for="axis">Eixo</label>
+          <input id="axis" type="text" class="radio" name="axis" value="X">
+        </div> 
+        <button type="button" id="rotate">Rotacionar</button>
+      </div>
+    </div>
+    <br/>
+    <div class="actions">
+    	<input id="ortogonal" type="radio" class="radio" name="type" value="ortogonal" checked> Ortogonal
+			<input id="cavaleira" type="radio" class="radio" name="type" value="cavaleira"> Cavaleira
+      <input id="cabinet" type="radio" class="radio" name="type" value="cabinet"> Cabinet
+    </div> 
+    <div id="paintRegion">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+  <script src="Projection.js"></script>
+  <script src="functions.js"></script>
+</body>
+
+</html>

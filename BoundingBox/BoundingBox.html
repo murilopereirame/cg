@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Bounding Box</title>
+</head>
+
+<body onload="init()">
+  <div class="content">
+    <div class="actions">
+      <button id="connect">Ligar pontos</button>
+      <button id="paint">Colorir</button>
+      <button id="reset">Reiniciar</button>
+    </div>
+    <div id="paintRegion">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+  <script src="functions.js"></script>
+  <script src="bBox.js"></script>
+</body>
+
+</html>

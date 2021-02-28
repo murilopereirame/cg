@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Light</title>
+</head>
+
+<body onload="Init()">
+  <div class="content">   
+    <div class="actions">
+    	<input id="spot" type="radio" class="radio" name="op" value="spot" checked> Ponto
+			<input id="specular" type="radio" class="radio" name="op" value="specular"> Especular
+    </div> 
+    <div id="paintRegion">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+  <script src="Light.js"></script>
+  <script src="functions.js"></script>
+</body>
+
+</html>

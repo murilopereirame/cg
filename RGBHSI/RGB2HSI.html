@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>RGB --> HSI</title>
+</head>
+
+<body onload="">
+  <div class="content">
+    <div class="holder">
+      <div class="inputHolder">
+        <div class="actions">
+          <div class="channel">
+            <label for="R">R</label>
+            <input id="R" type="text" class="radio" name="R" value="255">
+          </div>
+          <div div class="channel">
+            <label for="G">G</label>
+            <input id="G" type="text" class="radio" name="G" value="255">
+          </div>
+          <div div class="channel">
+            <label for="B">B</label>
+            <input id="B" type="text" class="radio" name="B" value="255">
+          </div>
+        </div>
+        <div class="actions">
+          <div div class="channel">
+            <label for="H">H</label>
+            <input id="H" type="text" class="radio" name="H" value="">
+          </div>
+          <div div class="channel">
+            <label for="S">S</label>
+            <input id="S" type="text" class="radio" name="S" value="">
+          </div>
+          <div div class="channel">
+            <label for="I">I</label>
+            <input id="I" type="text" class="radio" name="I" value="">
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" id="calc">
+          Calcular
+        </button>
+      </div>  
+    </div> 
+  </div>
+  <script src="functions.js"></script>
+</body>
+
+</html>
